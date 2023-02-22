@@ -1,0 +1,82 @@
+Exercice 1
+Créer une fonction qui prend en parametre un tableau de nombre
+et qui affiche ces differents nombres un à un.
+
+
+                               SOLUTION
+                     function tableau(tab){
+                        tab.map( function(elt){
+                             alert(elt);
+                                    }     
+                                )
+                         }
+
+
+
+
+
+
+Exercice 2 
+Créer une fonction qui prend en parametre un tableau de nombre et 
+qui retourne un tableau qui ne contient que les nombres impairs
+
+
+                              SOLUTION
+
+                    function filtrer(impaire){
+                    return impaire.filter(function(elt){
+                    return elt % 2 != 0;
+                                                    }
+                            )
+                     }
+
+
+
+
+
+
+Exercice 3
+Créer une fonction qui prend en parametre un tableau de nombre 
+et qui retourne la somme de ces nombres
+
+
+                             SOLUTION
+
+                    function calcule(somme){
+                    return somme.reduce(function(stock,elt){
+                             return stock + elt ;
+                                         }
+                                      )
+                          }
+
+
+
+
+
+
+Exercice 4 
+Créer une fonction qui prend en parametre un tableau
+qui verifie s'il existe un nombre pair dans le tableau ou non,
+retourner true ou false
+
+
+ function paritee(tab){
+    for(var i=0 ; i<tab.length;i++){
+        var conditions = (tab[i] % 2 == 0)? true :false ;
+        alert(conditions);
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
